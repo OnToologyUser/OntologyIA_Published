@@ -1,0 +1,172 @@
+{
+  "@context" : {
+    "LeisureTraveler" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#LeisureTraveler"
+    },
+    "passengerName" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#passengerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FoodReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FoodReview"
+    },
+    "BestQualificationReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BestQualificationReview"
+    },
+    "belongsToTrip" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToTrip",
+      "@type" : "@id"
+    },
+    "FirtsClassPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FirtsClassPlane"
+    },
+    "destinationCountry" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"
+    },
+    "planeModel" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AdultPassenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger"
+    },
+    "GroundReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#GroundReview"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "tripDate" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#tripDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "originCountry" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WorstQualificationReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#WorstQualificationReview"
+    },
+    "DisabledPassenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DisabledPassenger"
+    },
+    "originAirport" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originAirport",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "EconomyClassPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#EconomyClassPlane"
+    },
+    "typePassanger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#typePassanger",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DomesticTrip" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DomesticTrip"
+    },
+    "hasReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasReview",
+      "@type" : "@id"
+    },
+    "AirlineReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview"
+    },
+    "ChildPassenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#ChildPassenger"
+    },
+    "hasRated" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasRated",
+      "@type" : "@id"
+    },
+    "InternationalTrip" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InternationalTrip"
+    },
+    "CommercialPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "reviewRating" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "FrequentPassenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FrequentPassenger"
+    },
+    "Jet" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Jet"
+    },
+    "Plane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"
+    },
+    "PrivatePlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane"
+    },
+    "BusinessTraveler" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BusinessTraveler"
+    },
+    "Propeller" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Propeller"
+    },
+    "planeOrigin" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeOrigin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "reviewText" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPasssenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasPasssenger",
+      "@type" : "@id"
+    },
+    "OneWaytrip" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#OneWaytrip"
+    },
+    "Trip" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "InflightReview" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InflightReview"
+    },
+    "planeDestination" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeDestination",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "RegionalPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#RegionalPlane"
+    },
+    "TouristClassPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#TouristClassPlane"
+    },
+    "destinationAirport" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationAirport",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SeniorPassenger" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#SeniorPassenger"
+    },
+    "belongsToPlane" : {
+      "@id" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToPlane",
+      "@type" : "@id"
+    }
+  }
+}

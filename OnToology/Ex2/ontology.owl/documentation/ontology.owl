@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#"
+     xml:base="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-27="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27">
+        <rdfs:comment>@Author
+Aleix Blanco Balasch
+@Title
+Airline Reviews by passengers
+@Description
+This is an Ontology about reviews of trips and planes made by passengers</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToPlane -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToPlane">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToTrip -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToTrip">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasPasssenger -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasPasssenger">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:label xml:lang="en">hasPassenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasRated -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasRated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:label xml:lang="en">hasBeenRated</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasReview -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasReview">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationAirport -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationAirport">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationCountry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originAirport -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originAirport">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originCountry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#passengerName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#passengerName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeDestination -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeModel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeModel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeOrigin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#tripDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#tripDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#typePassanger -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#typePassanger">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BestQualificationReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BestQualificationReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#WorstQualificationReview"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BusinessTraveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BusinessTraveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#LeisureTraveler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#ChildPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#ChildPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DisabledPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DisabledPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DomesticTrip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DomesticTrip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#EconomyClassPlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#EconomyClassPlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FirtsClassPlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FirtsClassPlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FoodReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FoodReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FrequentPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FrequentPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#GroundReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#GroundReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InflightReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InflightReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InternationalTrip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InternationalTrip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Jet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Jet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Propeller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#LeisureTraveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#LeisureTraveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#OneWaytrip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#OneWaytrip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Propeller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Propeller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#RegionalPlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#RegionalPlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#SeniorPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#SeniorPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#TouristClassPlane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#TouristClassPlane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#WorstQualificationReview -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#WorstQualificationReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <belongsToPlane rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_01"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01"/>
+        <passengerName>Carolina</passengerName>
+        <typePassanger>Adult</typePassanger>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger"/>
+        <belongsToPlane rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_02"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02"/>
+        <passengerName>Jonh Doe</passengerName>
+        <typePassanger>Adult Passenger</typePassanger>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01"/>
+        <hasPasssenger rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_01"/>
+        <planeDestination>Barcelona</planeDestination>
+        <planeDestination>Boeing 787-9</planeDestination>
+        <planeOrigin>Budapest</planeOrigin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02"/>
+        <hasPasssenger rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_02"/>
+        <planeDestination>Italy</planeDestination>
+        <planeModel>Boeing 787-9</planeModel>
+        <planeOrigin>Madrid</planeOrigin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01"/>
+        <hasRated rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_01"/>
+        <reviewRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</reviewRating>
+        <reviewText>Good, but the trip was expensive</reviewText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review"/>
+        <belongsToTrip rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02"/>
+        <hasRated rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_02"/>
+        <reviewRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</reviewRating>
+        <reviewText>All was very good, congrat&apos;s</reviewText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <belongsToPlane rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_01"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_01"/>
+        <destinationAirport>El Prat</destinationAirport>
+        <destinationCountry>Spain</destinationCountry>
+        <originAirport>Budapest Airpor</originAirport>
+        <originCountry>Hungary</originCountry>
+        <tripDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-12T13:20:00-05:00</tripDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip"/>
+        <belongsToPlane rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_02"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_02"/>
+        <destinationAirport>Italy Airport</destinationAirport>
+        <destinationCountry>Italy</destinationCountry>
+        <originAirport>Madrid Airport</originAirport>
+        <originCountry>Spain</originCountry>
+        <tripDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-15T13:21:00-06:00</tripDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#ChildPassenger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DisabledPassenger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FrequentPassenger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#SeniorPassenger"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FoodReview"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#GroundReview"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InflightReview"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#RegionalPlane"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DomesticTrip"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InternationalTrip"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#OneWaytrip"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#EconomyClassPlane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FirtsClassPlane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#TouristClassPlane"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

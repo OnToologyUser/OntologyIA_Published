@@ -1,0 +1,34 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Review" "base:FrequentPassenger" "base:PrivatePlane" ":Passenger" "base:FirtsClassPlane" "base:WorstQualificationReview" "base:TouristClassPlane" "base:Propeller" "base:LeisureTraveler" "base:InflightReview" "base:GroundReview" "base:EconomyClassPlane" "base:DomesticTrip" ":Trip" ":Plane" "base:DisabledPassenger" "base:OneWaytrip" "base:Jet" "base:CommercialPlane" "base:SeniorPassenger" "base:FoodReview" "base:BusinessTraveler" "base:AirlineReview" "base:BestQualificationReview" "base:RegionalPlane" "base:AdultPassenger" "base:ChildPassenger" "base:InternationalTrip" ; /*classes style*/
+	"base:FrequentPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Propeller" -> "base:PrivatePlane" [ label = "rdfs:subClassOf" ];
+	"base:DomesticTrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+	":Plane" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Passenger" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:LeisureTraveler" -> "base:AdultPassenger" [ label = "rdfs:subClassOf" ];
+	"base:BestQualificationReview" -> "base:AirlineReview" [ label = "rdfs:subClassOf" ];
+	"base:CommercialPlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"base:FirtsClassPlane" -> "base:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"base:BusinessTraveler" -> "base:AdultPassenger" [ label = "rdfs:subClassOf" ];
+	":Review" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClassPlane" -> "base:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"base:FoodReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"base:WorstQualificationReview" -> "base:AirlineReview" [ label = "rdfs:subClassOf" ];
+	"base:SeniorPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"base:RegionalPlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"base:InternationalTrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+	"base:TouristClassPlane" -> "base:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"base:InflightReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	":Trip" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:PrivatePlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"base:ChildPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"base:GroundReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"base:DisabledPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"base:AirlineReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"base:Jet" -> "base:PrivatePlane" [ label = "rdfs:subClassOf" ];
+	"base:AdultPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"base:OneWaytrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+
+}

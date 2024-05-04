@@ -1,0 +1,34 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Review" "untitled-ontology-27:FrequentPassenger" "untitled-ontology-27:PrivatePlane" ":Passenger" "untitled-ontology-27:FirtsClassPlane" "untitled-ontology-27:WorstQualificationReview" "untitled-ontology-27:TouristClassPlane" "untitled-ontology-27:Propeller" "untitled-ontology-27:LeisureTraveler" "untitled-ontology-27:InflightReview" "untitled-ontology-27:GroundReview" "untitled-ontology-27:EconomyClassPlane" "untitled-ontology-27:DomesticTrip" ":Trip" ":Plane" "untitled-ontology-27:DisabledPassenger" "untitled-ontology-27:OneWaytrip" "untitled-ontology-27:Jet" "untitled-ontology-27:CommercialPlane" "untitled-ontology-27:SeniorPassenger" "untitled-ontology-27:FoodReview" "untitled-ontology-27:BusinessTraveler" "untitled-ontology-27:AirlineReview" "untitled-ontology-27:BestQualificationReview" "untitled-ontology-27:RegionalPlane" "untitled-ontology-27:AdultPassenger" "untitled-ontology-27:ChildPassenger" "untitled-ontology-27:InternationalTrip" ; /*classes style*/
+	"untitled-ontology-27:FrequentPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:Propeller" -> "untitled-ontology-27:PrivatePlane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:DomesticTrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+	":Plane" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Passenger" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:LeisureTraveler" -> "untitled-ontology-27:AdultPassenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:BestQualificationReview" -> "untitled-ontology-27:AirlineReview" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:CommercialPlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:FirtsClassPlane" -> "untitled-ontology-27:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:BusinessTraveler" -> "untitled-ontology-27:AdultPassenger" [ label = "rdfs:subClassOf" ];
+	":Review" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:EconomyClassPlane" -> "untitled-ontology-27:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:FoodReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:WorstQualificationReview" -> "untitled-ontology-27:AirlineReview" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:SeniorPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:RegionalPlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:InternationalTrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:TouristClassPlane" -> "untitled-ontology-27:CommercialPlane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:InflightReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	":Trip" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:PrivatePlane" -> ":Plane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:ChildPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:GroundReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:DisabledPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:AirlineReview" -> ":Review" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:Jet" -> "untitled-ontology-27:PrivatePlane" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:AdultPassenger" -> ":Passenger" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-27:OneWaytrip" -> ":Trip" [ label = "rdfs:subClassOf" ];
+
+}
