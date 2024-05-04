@@ -1,0 +1,1247 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27" ],
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "comments" : {
+      "undefined" : "@Author\nAleix Blanco Balasch\n@Title\nAirline Reviews by passengers\n@Description\nThis is an Ontology about reviews of trips and planes made by passengers"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#LeisureTraveler",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeisureTraveler"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FoodReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FoodReview"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#SeniorPassenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeniorPassenger"
+    },
+    "id" : "14",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BestQualificationReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BestQualificationReview"
+    },
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AdultPassenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultPassenger"
+    },
+    "subClasses" : [ "1", "44" ],
+    "id" : "2",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#TouristClassPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristClassPlane"
+    },
+    "id" : "25",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Passenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_02",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Passenger_02"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Passenger_01",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Passenger_01"
+      }
+    } ],
+    "subClasses" : [ "48", "49", "50", "2", "14" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DisabledPassenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DisabledPassenger"
+    },
+    "id" : "49",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Trip",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_01",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Trip_01"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Trip_02",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Trip_02"
+      }
+    } ],
+    "subClasses" : [ "36", "41", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#WorstQualificationReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorstQualificationReview"
+    },
+    "id" : "59",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#CommercialPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommercialPlane"
+    },
+    "subClasses" : [ "24", "29", "25" ],
+    "id" : "45",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#RegionalPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalPlane"
+    },
+    "id" : "39",
+    "superClasses" : [ "5" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "12" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "43"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "12" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "9", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#OneWaytrip",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OneWaytrip"
+    },
+    "id" : "41",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FrequentPassenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrequentPassenger"
+    },
+    "id" : "48",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Review",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_01",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Review_01"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Review_02",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Review_02"
+      }
+    } ],
+    "subClasses" : [ "55", "57", "10", "27" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#FirtsClassPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirtsClassPlane"
+    },
+    "id" : "29",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Propeller",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Propeller"
+    },
+    "id" : "32",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#EconomyClassPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomyClassPlane"
+    },
+    "id" : "24",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2/Plane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/reviews.act2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plane"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_02",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Plane_02"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Plane_01",
+      "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+      "labels" : {
+        "IRI-based" : "Plane_01"
+      }
+    } ],
+    "subClasses" : [ "39", "45", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#BusinessTraveler",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessTraveler"
+    },
+    "id" : "44",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#PrivatePlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrivatePlane"
+    },
+    "subClasses" : [ "31", "32" ],
+    "id" : "38",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InflightReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InflightReview"
+    },
+    "id" : "55",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#DomesticTrip",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomesticTrip"
+    },
+    "id" : "35",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#AirlineReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AirlineReview"
+    },
+    "subClasses" : [ "26", "59" ],
+    "id" : "27",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#InternationalTrip",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InternationalTrip"
+    },
+    "id" : "36",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#GroundReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroundReview"
+    },
+    "id" : "57",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#ChildPassenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChildPassenger"
+    },
+    "id" : "50",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#Jet",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Jet"
+    },
+    "id" : "31",
+    "superClasses" : [ "38" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToPlane",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "belongsToPlane"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasRated",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasRated",
+      "en" : "hasBeenRated"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#tripDate",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "tripDate"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewRating",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "reviewRating"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "20", "3", "21", "22", "7" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "29",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "25",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "41",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "41",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasPasssenger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasPasssenger",
+      "en" : "hasPassenger"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#typePassanger",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "typePassanger"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#hasReview",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasReview"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "38",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "1",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "39",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "55",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "57",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "59",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "55",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "10",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "55",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "57",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "9",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originCountry",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "originCountry"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "range" : "12",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "9",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeModel",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "planeModel"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "range" : "9",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "2",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "9",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "9",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#originAirport",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "originAirport"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeDestination",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "planeDestination"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#belongsToTrip",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "belongsToTrip"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "76",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "range" : "27",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "38",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "5",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "38",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "8",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "5",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "5",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationAirport",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "destinationAirport"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "range" : "8",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "45",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#passengerName",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "passengerName"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "8",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "12",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "12",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "45",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "45",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#destinationCountry",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "destinationCountry"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#reviewText",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "reviewText"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "range" : "48",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "14",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "49",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "48",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "14",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "48",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "14",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "14",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "50",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "49",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27#planeOrigin",
+    "baseIri" : "http://www.semanticweb.org/aleixblanco/ontologies/2024/4/untitled-ontology-27",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "planeOrigin"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  } ]
+}
